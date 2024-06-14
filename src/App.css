@@ -1,38 +1,93 @@
-.App {
+body {
+  background-color: #000; /* Fundo preto */
+  color: #fff; /* Letras brancas */
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.app {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.letter-button {
+  font-size: 24px;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #333; /* Fundo preto */
+  color: #fff; /* Letras brancas */
+  border: 1px solid #fff; /* Borda branca */
+  border-radius: 5px; /* Bordas arredondadas */
+}
+
+.letter-button:hover {
+  background-color: #555; /* Fundo preto mais claro ao passar o mouse */
+}
+
+.sequence-container {
+  background-color: #000; /* Fundo preto */
+  color: #fff; /* Letras brancas */
+  padding: 20px;
+  border-radius: 10px; /* Bordas arredondadas */
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.result-screen {
+  background-color: #000; /* Fundo preto */
+  color: #fff; /* Letras brancas */
+  padding: 20px;
+  border-radius: 10px; /* Bordas arredondadas */
+  margin-top: 20px;
+  text-align: center;
+}
+
+.result-screen h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.result-screen p {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.restart-button {
+  font-size: 24px;
+  padding: 15px 30px;
+  cursor: pointer;
+  background-color: #ff5722; /* Fundo laranja */
+  color: #fff; /* Letras brancas */
+  border: none;
+  border-radius: 10px; /* Bordas arredondadas */
+  transition: background-color 0.3s ease;
+}
+
+.restart-button:hover {
+  background-color: #e64a19; /* Fundo laranja mais escuro ao passar o mouse */
+}
+
+.congrats-message {
+  font-size: 28px;
+  font-weight: bold;
+  color: #4caf50; /* Verde */
+  margin-bottom: 20px;
+}
+
+.error-message {
+  font-size: 28px;
+  font-weight: bold;
+  color: #f44336; /* Vermelho */
+  margin-bottom: 20px;
 }
